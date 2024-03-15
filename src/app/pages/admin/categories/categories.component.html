@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered">
+            <thead>
+                <th>Sr No</th>
+                <th>Category Name</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of products$ | async; let index= index">
+                    <td>{{index+1}}</td>
+                    <td>{{item.categoryName}}</td>
+                    <td>Editar</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
